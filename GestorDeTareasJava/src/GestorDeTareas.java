@@ -12,14 +12,14 @@ public class GestorDeTareas {
             try { 
                 opcion = sc.nextInt(); 
             } catch (Exception e) { 
-                System.out.println("Por favor ingresa un número."); 
+                System.out.println("aqui debe ingresar un numero"); 
                 sc.nextLine(); 
                 opcion = 0; 
             } 
  
             switch (opcion) { 
                 case 1: 
-             System.out.println("Escribe la tarea:"); 
+             System.out.println("aqui tienes que escribir la tarea:"); 
              sc.nextLine(); 
              String tarea = sc.nextLine(); 
              if (!tarea.trim().isEmpty()) { 
