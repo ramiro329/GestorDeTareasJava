@@ -31,8 +31,21 @@ break;
                 case 2: 
                     System.out.println("Tareas: " + tareas); 
                     break; 
+                    case 3: 
+                    System.out.println("Escribe la tarea a buscar:"); 
+                    sc.nextLine(); 
+                    String buscar = sc.nextLine(); 
+                    if(tareaExiste(tareas, buscar)) { 
+                    System.out.println("La tarea existe."); 
+                    } else { 
+                    System.out.println("La tarea NO existe."); 
+                    } 
+                    break;   
             } 
         } while (opcion != 3); 
-        sc.close(); 
+        sc.close();
+    }
+        public static boolean tareaExiste(ArrayList<String> lista, String tarea) { 
+            return lista.contains(tarea);  
     } 
 } 
